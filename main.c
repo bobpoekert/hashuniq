@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 
     while((line_size = getline(&line, &size, stdin)) != -1) {
 
-        MurmurHash3_x86_32(line, line_size, seed, hash);
+        MurmurHash3_x64_128(line, line_size, seed, hash);
         hash_int = hash[0] ^ hash[1];
 
         if (!intset_contains(&seen, hash_int)) {
