@@ -6,4 +6,5 @@ this gets you the same result as the common `sort | uniq` pattern, but since it 
 thanks to:
 
 Geoff Gole (geoffgole@gmail.com) for the difference trie implementation we use to store the hashes
+
 Austin Appleby for the murmur3 hash function implementation
