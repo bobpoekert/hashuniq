@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
         hash_int = hash[0] ^ hash[1];
 
         if (!intset_contains(&seen, hash_int)) {
-            printf("%s\n", line);
+            printf("%s", line);
             intset_insert(&seen, hash_int);
         }
 
